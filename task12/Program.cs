@@ -5,14 +5,14 @@
 // 34, 5 -> не кратно, остаток 4
 // 16, 4 -> кратно
  
-Console.Write("Введите первое  целое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе целое число: ");
-int b = Convert.ToInt32(Console.ReadLine());
-bool Division(int arg1, int arg2)
+Console.Write("Введите первое  целое число: ");// Запросил целое число
+int a = Convert.ToInt32(Console.ReadLine());// Ковертировал число из текста в int
+Console.Write("Введите второе целое число: ");// Запросил второе целое число
+int b = Convert.ToInt32(Console.ReadLine());// Конвертировал второе целое число из текста в int
+bool Division(int arg1, int arg2)//Создал функцию
 {
-    return arg1 % arg2 == 0;
+    return arg1 % arg2 == 0;// Функция проверяет кратность одного числа другому
 }
-if (Division(a,b)) Console.WriteLine($"Число {a} кратно числу {b}");
-else Console.WriteLine($"Число {a} не картно числу {b}, остаток {a%b}");
+if (Division(a,b)) Console.WriteLine($"Число {a} кратно числу {b}");// Вывожу ответ, если функия bool выполняется
+else Console.WriteLine($"Число {a} не кратно числу {b}, остаток {a%b}");// Вывожу ответ если функция не выполняется
     

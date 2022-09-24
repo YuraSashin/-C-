@@ -6,20 +6,20 @@
 
 // 32679 -> 6
 
-Console.Write("Введите целое число: "); //запрсил число
+Console.Write("Введите целое число: "); //запросил число
 int a = Convert.ToInt32(Console.ReadLine());// Конвертировал число из текста в int
-if (a < 99)
+if (a < 99)// Выделил диапозон, согласно которому в числе не будет 3-й цифры
 {
-    Console.WriteLine($"{a} -> Третьей цифры нет");
+    Console.WriteLine($"{a} -> Третьей цифры нет");// Вывожу ответ для чисел без 3-й цифры
 }
-else
+else//Действия для чисел больше 99
 {
-  int RemoveSekondDigit ( int arg) 
+  int RemoveSekondDigit ( int arg) // Создал функцию
   {
-int firstDigit = arg%1000;
-int lengthDigit = firstDigit/100;
-return lengthDigit;
+int firstDigit = arg%1000; //Выделил остаток от деления на 1000
+int lengthDigit = firstDigit/100; // Получаю третью цифру, путем деления результата предедущего пункта на 100
+return lengthDigit; //Возвращаю результат
   } 
-  int transformation = RemoveSekondDigit(a);
-  Console.WriteLine($"Третье цифра числа{a} -> {transformation} ");
+  int transformation = RemoveSekondDigit(a);//Обращаюсь к функции,подставляя число пользователя
+  Console.WriteLine($"Третья цифра числа{a} -> {transformation} ");//Вывожу результат пользователю
 }
