@@ -19,5 +19,12 @@ int Degree(int num1, int num2)
     }
     return work;
 }
+if (b<0)
+{
+    Console.WriteLine("Введите, пожалуйста положительное число");
+}
+else
+{
 int degree = Degree(a,b);
 Console.WriteLine($"{a},{b} -> {degree}");
+}
