@@ -38,6 +38,6 @@ int QuantityElemRande (int[]array, int min, int max)//Создал метод п
     return count;
 }
 int[] arr = CreateArrayRndInt(123, 0, 1000);//Создал случайный массив длинна 123, диапазон 0; 1000
-PrintArray(arr);//Вывел случайный массивint[] arr = CreateArrayRndInt(12, -9, 9);
+PrintArray(arr);//Вывел случайный массив на экран
 int quantityElemRande = QuantityElemRande(arr,10,99);//Обратился к методу нахождения конкретных значений в диапазон, подставил случайный массив и диапазон
 Console.WriteLine($"-> {quantityElemRande}");
