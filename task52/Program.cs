@@ -32,7 +32,7 @@ void PrintMatrix(int[,] matrix)//Метод вывода массива
         Console.WriteLine("]");
     }
 }
-int[,] array2D = CreateMatrixRndInt(4, 3, 1, 9);
+
 
 void ArithmeticalMean(int[,] matrix)
 {
@@ -44,17 +44,18 @@ void ArithmeticalMean(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(0); j++)
         {
-             sum += matrix[j, i];
-             
+            sum += matrix[j, i];
 
 
-            }
+
+        }
         Console.Write($"{sum / matrix.GetLength(0)}; ");
         sum = default;
     }
 
 
 }
+int[,] array2D = CreateMatrixRndInt(4, 3, 1, 9);
 PrintMatrix(array2D);
 ArithmeticalMean(array2D);
 
