@@ -2,7 +2,7 @@
 // которых оба индекса чётные, и замените эти элементы на их
 // квадраты.
 
-int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)//Метод создания случайного двумерного массива массива
+int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)//Метод создания случайного двумерного массива 
 {
     int[,] matrix = new int[rows, columns];
     var rnd = new Random();
