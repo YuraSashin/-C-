@@ -55,7 +55,7 @@ void SortingMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)// matrix.GetLength(0) это колличество строк(rows), индекс показывает измерение массива
     {
-        int[] arrayRows = new int[matrix.GetLength(1)];//Преобразовал строку в отдельный массив
+        int[] arrayRows = new int[matrix.GetLength(0)];//Преобразовал строку в отдельный массив
         for (int j = 0; j < matrix.GetLength(1); j++)//matrix.GetLength(1) это колличество столбцов(columns)
         {
             arrayRows[j] = matrix[i, j];
